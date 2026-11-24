@@ -7,12 +7,8 @@ export default function PresentationTeam() {
 
   const names =
     language === "ar"
-      ? ["م. محمد فؤاد", "م. شيماء توفيق", "م. عبد الله الوصيفي"]
-      : ["ENG. Mohamed Fouad", "ENG. Shimaa Tawfiq", "ENG. Abdallah Elwasify"];
-  const roles =
-    language === "ar"
-      ? ["فريق البحث والتطوير", "فريق البحث والتطوير", "مطوّر واجهات"]
-      : ["Research & Development", "Research & Development", "Frontend Developer"];
+      ? ["م. عبد الله الوصيفي", "م. عمرو الرطيل", "م. احمد يسري"]
+      : ["ENG. Abdallah Elwasify", "ENG. Amr Elrotel", "ENG. Ahmed Yousry"];
 
   return (
     <section
@@ -38,7 +34,6 @@ export default function PresentationTeam() {
             <Card
               key={presenter.name}
               name={names[index]}
-              role={roles[index]}
               photo={presenter.photo}
               socialLinks={presenter.socialLinks}
             />

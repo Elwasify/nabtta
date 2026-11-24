@@ -1,15 +1,15 @@
-import mohamedFouadPortrait from "../assets/mohamed-fouad.webp";
-import shimaaTawfiqPortrait from "../assets/shimaa-tawfiq.webp";
 import sarahFoudaPortrait from "../assets/sarah-fouda.webp";
 import abdallahElwasifyPortrait from "../assets/abdallah-elwasify.webp";
+import amrElrotelPortrait from "../assets/amr-elrotel.jpg";
+import ahmedYousryPortrait from "../assets/ahmed-yousry.jpeg";
 export const supervisor = {
   name: "Prof. Dr. Sarah Fouda",
   photo: sarahFoudaPortrait,
 };
 
 export const teamMembers = [
-  "Mohamed Fouad",
-  "Shimaa Tawfiq",
+  "Amr Elrotel",
+  "Ahmed Yousry",
   "Ahmed Ehab",
   "Hagar Waled",
   "Fatma Yasser",
@@ -22,39 +22,26 @@ export const teamMembers = [
   "Nada Mohammed",
 ];
 
-export const socialLinks = [
+export const ahmedSocialLinks = [
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/ahmed-yousry-ba99652a0/",
+    icon: "simple-icons:linkedin",
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/ahmedYousry730",
+    icon: "simple-icons:github",
+  },
   {
     label: "Facebook",
-    href: "https://www.facebook.com/share/1Cey6MSJtR/",
+    href: "https://www.facebook.com/share/1AAFv7WHZo/?mibextid=wwXIfr",
     icon: "simple-icons:facebook",
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/fouad8_19",
+    href: "https://www.instagram.com/ahmed.yousry.730/",
     icon: "simple-icons:instagram",
-  },
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/in/mohamed-fouad-55b1a0301",
-    icon: "simple-icons:linkedin",
-  },
-];
-
-export const shimaaSocialLinks = [
-  {
-    label: "Facebook",
-    href: "https://www.facebook.com/share/1Mh3AScm3k/",
-    icon: "simple-icons:facebook",
-  },
-  {
-    label: "Instagram",
-    href: "https://www.instagram.com/shimaa_tawfiq/",
-    icon: "simple-icons:instagram",
-  },
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/in/shimaa-tawfiq-929161356/",
-    icon: "simple-icons:linkedin",
   },
 ];
 
@@ -81,21 +68,39 @@ export const abdallahSocialLinks = [
   },
 ];
 
+export const amrSocialLinks = [
+  {
+    label: "GitHub",
+    href: "https://github.com/amr332723",
+    icon: "simple-icons:github",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/amr-mohamed-91a71a2b6/",
+    icon: "simple-icons:linkedin",
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/amrel_rotel/",
+    icon: "simple-icons:instagram",
+  },
+];
+
 export const presenters = [
-  {
-    name: "ENG. Mohamed Fouad",
-    photo: mohamedFouadPortrait,
-    socialLinks,
-  },
-  {
-    name: "ENG. Shimaa Tawfiq",
-    photo: shimaaTawfiqPortrait,
-    socialLinks: shimaaSocialLinks,
-  },
   {
     name: "ENG. Abdallah Elwasify",
     photo: abdallahElwasifyPortrait,
     socialLinks: abdallahSocialLinks,
+  },
+  {
+    name: "ENG. Amr Elrotel",
+    photo: amrElrotelPortrait,
+    socialLinks: amrSocialLinks,
+  },
+  {
+    name: "ENG. Ahmed Yousry",
+    photo: ahmedYousryPortrait,
+    socialLinks: ahmedSocialLinks,
   },
 ];
 

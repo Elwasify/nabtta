@@ -160,8 +160,8 @@ export const translations = {
       description:
         "A collaborative team working to improve soil quality and support sustainable growth.",
       members: [
-        "Mohamed Fouad",
-        "Shimaa Tawfiq",
+        "Amr Elrotel",
+        "Ahmed Yousry",
         "Ahmed Ehab",
         "Hagar Waled",
         "Fatma Yasser",
@@ -371,8 +371,8 @@ export const translations = {
       description:
         "فريق تعاوني يعمل على تحسين جودة التربة ودعم النمو المستدام.",
       members: [
-        "محمد فؤاد",
-        "شيماء توفيق",
+        "عمرو الرطيل",
+        "احمد يسري",
         "أحمد إيهاب",
         "هاجر وليد",
         "فاطمة ياسر",

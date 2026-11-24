@@ -1,0 +1,38 @@
+import { useEffect, useState } from "react";
+import { Icon } from "@iconify/react";
+import { useLanguage } from "../../context/useLanguage";
+
+export default function BackToTop() {
+  const { t } = useLanguage();
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 400);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+    window.scrollTo({
+      top: 0,
+      behavior: prefersReducedMotion ? "auto" : "smooth",
+    });
+  };
+
+  return (
+    <button
+      type="button"
+      onClick={scrollToTop}
+      aria-label={t.footer.backToTop}
+      className={`fixed bottom-6 end-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-forest-900 text-white shadow-xl shadow-forest-950/25 transition-all duration-300 hover:scale-110 hover:bg-forest-800 active:scale-95 ${
+        visible ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-4 opacity-0"
+      }`}
+    >
+      <Icon icon="ph:arrow-up-bold" width={20} height={20} />
+    </button>
+  );
+}

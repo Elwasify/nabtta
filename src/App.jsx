@@ -5,11 +5,7 @@ import Hero from "./components/Hero";
 import ResearchOverview from "./components/ResearchOverview";
 import ResearchAreas from "./components/ResearchAreas";
 import Publications from "./components/Publications";
-import ProjectRepository from "./components/ProjectRepository";
-import UnderSupervision from "./components/UnderSupervision";
 import PresentationTeam from "./components/PresentationTeam";
-import TechnicalSupport from "./components/TechnicalSupport";
-import ProjectTeam from "./components/ProjectTeam";
 import Rating from "./components/Rating";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop/BackToTop";
@@ -55,11 +51,7 @@ function HomePage() {
         <Ingredients />
         <ProductOrder />
         <Publications />
-        <ProjectRepository />
-        <UnderSupervision />
         <PresentationTeam />
-        <TechnicalSupport />
-        <ProjectTeam />
         <Rating />
       </main>
       <Footer />

@@ -12,12 +12,7 @@ export const translations = {
       { label: "The Product", href: "#order" },
       { label: "Our Team", href: "#team" },
       { label: "Publications", href: "#publications" },
-      { label: "Repository", href: "#repository" },
     ],
-    navbar: {
-      repositoryButton: "Project Repository",
-      repositoryButtonMobile: "Access Project Repository",
-    },
     hero: {
       label: "NABTA · Bio-Based Soil Conditioner",
       titleStart: "Better Soil.",
@@ -135,13 +130,6 @@ export const translations = {
       backHome: "Back to Home",
       viewResearch: "Explore the Research",
     },
-    repository: {
-      label: "Open Resources. Shared Knowledge.",
-      title: "Project Repository",
-      description:
-        "Explore the project's supporting materials, research resources, and related documentation in one place.",
-      button: "Access Project Repository",
-    },
     supervisor: {
       label: "Academic Guidance",
       title: "Under the Supervision of",
@@ -150,9 +138,9 @@ export const translations = {
       distinction: "",
     },
     presentation: {
-      label: "The Presenters",
-      title: "NABTA Team Presentation",
-      presentedBy: "Presented by",
+      label: "The Team",
+      title: "Meet Our Team Members",
+      presentedBy: "Team member",
       showDetails: "Show details for",
       hideDetails: "Hide details for",
       socialLinkLabel: "on",
@@ -213,13 +201,12 @@ export const translations = {
       taglineHighlight: "stronger growth",
       description:
         "A bio-based soil conditioner designed to improve sandy soils and support sustainable plant growth.",
-      repository: "Project Repository",
       quickLinks: "Quick links",
       contactUs: "Contact",
       followUs: "Follow us",
-      location: "Faculty of Agriculture, Zagazig University",
+      location: "Faculty of Computers and Information, Arish University",
       backToTop: "Back to top",
-      socialAccountPrefix: "Mohamed Fouad on",
+      socialAccountPrefix: "Abdallah Elwasify on",
       copyright: "© 2026 NABTA Team. An academic research project.",
     },
   },
@@ -236,12 +223,7 @@ export const translations = {
       { label: "المنتج", href: "#order" },
       { label: "فريقنا", href: "#team" },
       { label: "المنشورات", href: "#publications" },
-      { label: "المستودع", href: "#repository" },
     ],
-    navbar: {
-      repositoryButton: "مستودع المشروع",
-      repositoryButtonMobile: "الدخول إلى مستودع المشروع",
-    },
     hero: {
       label: "NABTA · مُحسِّن تربة قائم على مواد حيوية",
       titleStart: "تربة أفضل.",
@@ -359,13 +341,6 @@ export const translations = {
       backHome: "العودة للرئيسية",
       viewResearch: "استكشف الأبحاث",
     },
-    repository: {
-      label: "موارد مفتوحة. معرفة مشتركة.",
-      title: "مستودع المشروع",
-      description:
-        "استكشف المواد الداعمة للمشروع والموارد البحثية والوثائق ذات الصلة في مكان واحد.",
-      button: "الدخول إلى مستودع المشروع",
-    },
     supervisor: {
       label: "الإشراف الأكاديمي",
       title: "تحت إشراف",
@@ -374,9 +349,9 @@ export const translations = {
       distinction: "",
     },
     presentation: {
-      label: "المقدّمون",
-      title: "عرض فريق NABTA",
-      presentedBy: "تقديم",
+      label: "فريق العمل",
+      title: "تعرّف على أعضاء فريقنا",
+      presentedBy: "عضو الفريق",
       showDetails: "عرض تفاصيل",
       hideDetails: "إخفاء تفاصيل",
       socialLinkLabel: "على",
@@ -437,13 +412,12 @@ export const translations = {
       taglineHighlight: "نمو أقوى",
       description:
         "مُحسِّن تربة قائم على مواد حيوية، يهدف إلى دعم التربة الرملية ونمو النباتات بصورة أكثر استدامة.",
-      repository: "مستودع المشروع",
       quickLinks: "روابط سريعة",
       contactUs: "تواصل معنا",
       followUs: "تابعنا",
-      location: "كلية الزراعة، جامعة الزقازيق",
+      location: "كلية الحاسبات والمعلومات، بالعريش",
       backToTop: "العودة للأعلى",
-      socialAccountPrefix: "حساب محمد فؤاد على",
+      socialAccountPrefix: "حساب عبد الله الوصيفي على",
       copyright: "© 2026 فريق NABTA. مشروع بحثي أكاديمي.",
     },
   },

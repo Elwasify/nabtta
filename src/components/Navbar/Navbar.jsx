@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
 import Brand from "../Brand";
-import { repositoryUrl } from "../../data/researchData";
 import { useLanguage } from "../../context/useLanguage";
 
 const navIcons = {
@@ -97,26 +96,6 @@ export default function Navbar({ overlay = false }) {
               {t.meta.languageButton}
             </button>
 
-            <a
-              href={repositoryUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`hidden items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold transition-all hover:-translate-y-0.5 hover:shadow-md xl:inline-flex ${
-                light
-                  ? "bg-white text-forest-950 hover:bg-mist-100"
-                  : "bg-forest-900 text-white hover:bg-forest-800"
-              }`}
-            >
-              <Icon icon="ph:folder-open-duotone" width={18} height={18} />
-              {t.navbar.repositoryButton}
-              <Icon
-                icon="ph:arrow-up-right-bold"
-                width={15}
-                height={15}
-                className="rtl:-scale-x-100"
-              />
-            </a>
-
             <button
               type="button"
               onClick={() => setOpen((value) => !value)}
@@ -177,25 +156,6 @@ export default function Navbar({ overlay = false }) {
                   {item.label}
                 </a>
               ))}
-              <a
-                href={repositoryUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`mt-3 inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold transition-all hover:-translate-y-0.5 ${
-                  light
-                    ? "bg-white text-forest-950 hover:bg-mist-100"
-                    : "bg-forest-900 text-white hover:bg-forest-800"
-                }`}
-              >
-                <Icon icon="ph:folder-open-duotone" width={18} height={18} />
-                {t.navbar.repositoryButtonMobile}
-                <Icon
-                  icon="ph:arrow-up-right-bold"
-                  width={16}
-                  height={16}
-                  className="rtl:-scale-x-100"
-                />
-              </a>
             </nav>
           </div>
         )}

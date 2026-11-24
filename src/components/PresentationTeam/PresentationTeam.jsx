@@ -3,7 +3,16 @@ import { useLanguage } from "../../context/useLanguage";
 import Card from "../Card";
 
 export default function PresentationTeam() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+
+  const names =
+    language === "ar"
+      ? ["م. محمد فؤاد", "م. شيماء توفيق", "م. عبد الله الوصيفي"]
+      : ["ENG. Mohamed Fouad", "ENG. Shimaa Tawfiq", "ENG. Abdallah Elwasify"];
+  const roles =
+    language === "ar"
+      ? ["فريق البحث والتطوير", "فريق البحث والتطوير", "مطوّر واجهات"]
+      : ["Research & Development", "Research & Development", "Frontend Developer"];
 
   return (
     <section
@@ -22,14 +31,14 @@ export default function PresentationTeam() {
         </div>
 
         <div
-          className="mt-8 grid grid-cols-1 justify-items-center gap-5 sm:mt-12 sm:grid-cols-2 sm:gap-8"
+          className="mt-8 grid grid-cols-1 justify-items-center gap-5 sm:mt-12 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3"
           data-reveal="stagger"
         >
-          {presenters.map((presenter) => (
+          {presenters.map((presenter, index) => (
             <Card
               key={presenter.name}
-              name={presenter.name}
-              role={t.presentation.presentedBy}
+              name={names[index]}
+              role={roles[index]}
               photo={presenter.photo}
               socialLinks={presenter.socialLinks}
             />

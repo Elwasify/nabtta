@@ -1,9 +1,7 @@
 import mohamedFouadPortrait from "../assets/mohamed-fouad.webp";
 import shimaaTawfiqPortrait from "../assets/shimaa-tawfiq.webp";
 import sarahFoudaPortrait from "../assets/sarah-fouda.webp";
-export const repositoryUrl =
-  "https://drive.google.com/drive/folders/13rkWvzJrjXSu2hXwiudqTEgrNFew7AH3?usp=sharing";
-
+import abdallahElwasifyPortrait from "../assets/abdallah-elwasify.webp";
 export const supervisor = {
   name: "Prof. Dr. Sarah Fouda",
   photo: sarahFoudaPortrait,
@@ -60,6 +58,29 @@ export const shimaaSocialLinks = [
   },
 ];
 
+export const abdallahSocialLinks = [
+  {
+    label: "GitHub",
+    href: "https://github.com/Elwasify",
+    icon: "simple-icons:github",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/abdallah-elwasify/",
+    icon: "simple-icons:linkedin",
+  },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/abdallah.elwasify.31",
+    icon: "simple-icons:facebook",
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/abdallahelwasify_/",
+    icon: "simple-icons:instagram",
+  },
+];
+
 export const presenters = [
   {
     name: "ENG. Mohamed Fouad",
@@ -70,6 +91,11 @@ export const presenters = [
     name: "ENG. Shimaa Tawfiq",
     photo: shimaaTawfiqPortrait,
     socialLinks: shimaaSocialLinks,
+  },
+  {
+    name: "ENG. Abdallah Elwasify",
+    photo: abdallahElwasifyPortrait,
+    socialLinks: abdallahSocialLinks,
   },
 ];
 

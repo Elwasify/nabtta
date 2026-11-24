@@ -157,30 +157,6 @@ main > section.surface-order {
   color: var(--color-ink);
 }
 
-.footer-repository-link {
-  border-color: #cadcc5;
-  background: #e8f0e4;
-  color: #245236;
-}
-
-.footer-repository-link:hover {
-  border-color: #a9c5a1;
-  background: #d9e8d4;
-  color: #173d2b;
-}
-
-.footer-repository-link:active {
-  border-color: #245236;
-  background: #245236;
-  color: white;
-  transform: scale(0.98);
-}
-
-.footer-repository-link:focus-visible {
-  outline: 2px solid #56823f;
-  outline-offset: 3px;
-}
-
 .surface-cta::after {
   position: absolute;
   inset: 0;
@@ -194,23 +170,6 @@ main > section.surface-order {
   background-size: 138px 138px;
   background-position: 0 0, 69px 69px;
   mask-image: linear-gradient(115deg, #000, transparent 76%);
-}
-
-.repository-section {
-  background:
-    linear-gradient(110deg, rgb(10 32 21 / 82%), rgb(13 39 25 / 68%)),
-    url("/nabta-repository-bg.webp") center 58% / cover no-repeat;
-}
-
-.repository-section::after {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  content: "";
-  background:
-    radial-gradient(circle at 15% 20%, rgb(182 231 95 / 12%), transparent 22rem),
-    linear-gradient(180deg, rgb(10 32 21 / 8%), rgb(10 32 21 / 38%));
 }
 
 .hero-stage {

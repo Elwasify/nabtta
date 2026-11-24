@@ -1,29 +1,30 @@
 import { Icon } from "@iconify/react";
 import Brand from "../Brand";
-import { repositoryUrl, socialLinks } from "../../data/researchData";
+import { abdallahSocialLinks } from "../../data/researchData";
 import { useLanguage } from "../../context/useLanguage";
 
 const contacts = [
   {
     icon: "ph:map-pin-duotone",
     label: "location",
-    href: "https://www.google.com/maps/search/?api=1&query=Faculty+of+Agriculture+Zagazig+University",
+    href: "https://www.google.com/maps/search/?api=1&query=Faculty+of+Computers+and+Information+Arish+University",
   },
   {
     icon: "simple-icons:whatsapp",
-    text: "01096175175",
-    href: "https://wa.me/201096175175",
+    text: "01096402629",
+    href: "https://wa.me/201096402629",
   },
   {
     icon: "ph:envelope-simple-duotone",
-    text: "mohfouadmf42@gmail.com",
-    href: "mailto:mohfouadmf42@gmail.com",
+    text: "abdallahelwasify0@gmail.com",
+    href: "mailto:abdallahelwasify0@gmail.com",
   },
 ];
 
 export default function Footer() {
   const { t } = useLanguage();
-  const links = t.nav.filter((item) => item.href !== "#repository");
+  const links = t.nav;
+  const followLinks = abdallahSocialLinks.filter((item) => item.label !== "GitHub");
 
   return (
     <footer className="site-footer w-full text-white">
@@ -55,15 +56,6 @@ export default function Footer() {
               <p className="mt-5 max-w-sm text-sm leading-relaxed text-ink-soft">
                 {t.footer.description}
               </p>
-              <a
-                href={repositoryUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="footer-repository-link mt-6 inline-flex items-center gap-2 rounded-full border px-4 py-2.5 text-sm font-semibold transition-all hover:-translate-y-0.5 hover:shadow-md"
-              >
-                <Icon icon="ph:folder-open-duotone" width={20} height={20} />
-                {t.footer.repository}
-              </a>
             </div>
 
             <div className="border-b border-line p-6 sm:p-8 xl:border-b-0 xl:border-e">
@@ -121,7 +113,7 @@ export default function Footer() {
             <div className="p-6 sm:p-8">
               <h3 className="text-sm font-bold">{t.footer.followUs}</h3>
               <div className="mt-5 flex flex-wrap gap-2.5">
-                {socialLinks.map((s) => (
+                {followLinks.map((s) => (
                   <a
                     key={s.label}
                     href={s.href}

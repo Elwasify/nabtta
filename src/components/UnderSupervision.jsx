@@ -10,7 +10,7 @@ const supervisorSocialLinks = [
   },
   {
     label: "WhatsApp",
-    href: "https://wa.me/201096175175",
+    href: "https://wa.me/201096402629",
     icon: "simple-icons:whatsapp",
   },
 ];
